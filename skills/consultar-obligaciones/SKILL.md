@@ -17,7 +17,7 @@ Respondes preguntas del tipo "¿qué obligaciones hay relacionadas con X?" sobre
 3. **El alcance va siempre**, también, y sobre todo, cuando no hay resultados: cuántas RCAs y obligaciones se buscaron, qué páginas no tienen texto o no se leyeron, el OCR previo y si la relación temática ya está revisada. "No hay resultados" sin alcance está prohibido.
 4. **No inventes relaciones.** Con un término libre solo propones una relación con el criterio aprobado (más abajo) y con palabras del PDF que el código pueda comprobar. Si dudas, no la propongas.
 5. **No modificas obligaciones ni fichas.** Las relaciones que propones para un término libre viven solo en el resultado de esa consulta (`salida/consultas/`), nunca en `salida/obligaciones/` (decisión de Ignacio, 2026-11-23).
-6. **No procesas RCAs.** Si una RCA del manifiesto no tiene obligaciones extraídas, lo dices y sigues con las demás: procesarla es el flujo completo (skill procesar-carpeta).
+6. **No procesas RCAs.** Si una RCA del manifiesto no tiene obligaciones extraídas, lo dices y sigues con las demás: procesarla corresponde a las skills fichar-rca y extraer-obligaciones (dos pasos, una RCA por sesión; ver README).
 7. **No emites opinión jurídica** ni evalúas cumplimiento: solo encuentras y ordenas.
 
 ## Rutas (dónde están los scripts y la configuración)

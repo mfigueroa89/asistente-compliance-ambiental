@@ -771,7 +771,7 @@ def archivos_de_la_consulta(opciones, unidades):
     sin_obligaciones = [a for a in candidatos if a not in procesados]
     for archivo in sin_obligaciones:
         avisos.append(f"{archivo} está en el manifiesto pero no tiene obligaciones extraídas: no se incluye en la consulta "
-                      f"(procesarla corresponde al flujo completo, skill procesar-carpeta).")
+                      f"(se procesa en dos pasos: skills fichar-rca y extraer-obligaciones).")
     return [a for a in archivos if a in procesados], uf, avisos
 
 
