@@ -36,20 +36,25 @@ Es un proyecto personal de demostración, hecho para una postulación laboral. N
 
 ### Opción A (recomendada): instalar el plugin desde GitHub
 
-1. En la aplicación de Claude, pestaña **Code**, haga clic en **+** (junto al cuadro de mensaje) y entre a **Plugins**.
-2. Agregue el catálogo (marketplace) de GitHub de este repositorio: `mfigueroa89/asistente-compliance-ambiental` (https://github.com/mfigueroa89/asistente-compliance-ambiental).
-3. Instale el plugin **asistente-compliance-ambiental**.
-4. Abra una sesión nueva en la carpeta donde va a trabajar con sus RCAs y escriba: **"prepara el entorno del asistente"**. Claude le explicará que debe crear, una sola vez, el entorno de Python del asistente (las bibliotecas para leer PDF y crear el Excel) y lo hará solo si usted lo autoriza.
+Probada el 24-11-2026 en Mac, con la aplicación de escritorio.
+
+1. **Instalar el plugin.** En la aplicación de Claude, pestaña **Code**, haga clic en **+** (junto al cuadro de mensaje) y entre a **Plugins**. Agregue el catálogo (marketplace) de GitHub `mfigueroa89/asistente-compliance-ambiental` (https://github.com/mfigueroa89/asistente-compliance-ambiental); aparece como **compliance-ambiental**. Instale el plugin **asistente-compliance-ambiental**.
+2. **Preparar su carpeta de trabajo.** En el Finder (o el Explorador de Windows), cree una carpeta para sus RCAs, por ejemplo `Mis RCAs`, con una subcarpeta `rcas` donde dejará los PDF (ver [Su carpeta de trabajo](#su-carpeta-de-trabajo)).
+3. **Abrir una sesión en esa carpeta.** En **Code**, cree un entorno nuevo de tipo **Local** (en su computador, no en la nube) cuya única carpeta sea la de sus RCAs, y abra una sesión en él. Si la lista de carpetas incluye otras, quítelas.
+4. **Comprobar las skills.** Escriba `/` en el cuadro de mensaje: deben aparecer **asistente-compliance-ambiental:fichar-rca**, **…:extraer-obligaciones** y **…:consultar-obligaciones**.
+5. **Preparar el entorno, una sola vez.** Escriba **"prepara el entorno del asistente"**. Claude le explica que debe crear el entorno de Python del asistente (las bibliotecas para leer PDF y crear el Excel, descargadas de PyPI, el repositorio oficial de Python) y lo hace solo si usted lo autoriza; la aplicación también puede pedirle aprobar el comando. Tarda alrededor de un minuto y termina confirmando que las bibliotecas cargan. Si Claude no reconoce la petición, escriba `/asistente-compliance-ambiental:fichar-rca prepara el entorno del asistente`.
+
+El entorno queda dentro de la carpeta de la versión instalada del plugin: **si actualiza el plugin, vuelva a pedir "prepara el entorno del asistente"**.
+
+Para desinstalar: **+ › Plugins › Manage plugins**.
 
 ### Opción B: descargar el proyecto y abrir su carpeta
 
 1. Descargue el repositorio (botón **Code › Download ZIP** en GitHub) y descomprímalo.
-2. En la aplicación de Claude, pestaña **Code**, abra una sesión en esa carpeta. Las skills quedan disponibles como skills del proyecto.
+2. En la aplicación de Claude, pestaña **Code**, abra una sesión **Local** en esa carpeta. Las skills quedan disponibles como skills del proyecto (en `/` aparecen como **fichar-rca**, **extraer-obligaciones** y **consultar-obligaciones**).
 3. Escriba **"prepara el entorno del asistente"**, igual que en la opción A.
 
 En Windows, la opción B puede no reconocer las skills (usa enlaces de carpeta que Windows no siempre conserva); en ese caso use la opción A.
-
-Para confirmar que las skills están disponibles, escriba `/` en el cuadro de mensaje: deben aparecer **fichar-rca**, **extraer-obligaciones** y **consultar-obligaciones**.
 
 ---
 
@@ -70,7 +75,7 @@ mi-carpeta/
 
 Hoy el proceso es manual y en dos pasos; todavía **no existe un comando único** que procese una carpeta completa.
 
-1. Deje el PDF en `rcas/` y agregue su fila en `manifiesto.csv`.
+1. Deje el PDF dentro de `rcas/` (no suelto en la carpeta) y agregue su fila en `manifiesto.csv`, con el nombre del archivo escrito exactamente igual. Sin `manifiesto.csv`, las consultas usan el manifiesto de ejemplo y lo avisan, y el Excel necesita que se le indique uno; una RCA que no figure en el manifiesto queda como "SIN UF ASIGNADA".
 2. **Paso 1, ficha.** En una sesión nueva escriba, por ejemplo: *"ficha la RCA rcas/rca_151_2013_arqueros_atacama.pdf"*. Claude lee el PDF (y la imagen de las páginas escaneadas), ubica las secciones relevantes, escribe la ficha y la valida. Revise lo que le muestra.
 3. **Paso 2, obligaciones.** En otra sesión nueva: *"extrae las obligaciones de rca_151_2013_arqueros_atacama"*. Claude lee sección por sección, registra cada obligación con su página y cita, y comprueba que todas las páginas de las secciones de obligaciones quedaron revisadas.
 4. Cuando quiera el Excel: *"genera el Excel"*. El Excel solo se regenera cuando usted lo pide.
@@ -118,7 +123,7 @@ El proyecto se probó con tres RCAs públicas del e-SEIA, elegidas por ser disti
 | Proyecto Arqueros (EIA) | N° 151, 2013, Región de Atacama | 228 páginas, con humedales (vegas y bofedales) y páginas escaneadas |
 | Pozas de evaporación solar en el Salar de Atacama, Albemarle (EIA) | N° 21, 2016, Región de Antofagasta | Escaneo antiguo con OCR de calidad variable |
 
-**Los PDF no están en el repositorio.** Los enlaces al e-SEIA, el nombre de archivo esperado y la huella (SHA-256) de cada uno están en [`ejemplos/rcas_publicas/FUENTES.md`](ejemplos/rcas_publicas/FUENTES.md). Para reproducir los ejemplos, descárguelos y guárdelos en esa carpeta.
+**Los PDF no están en el repositorio.** Los enlaces al e-SEIA, el nombre de archivo esperado y la huella (SHA-256) de cada uno están en [`ejemplos/rcas_publicas/FUENTES.md`](ejemplos/rcas_publicas/FUENTES.md). Para probar con un ejemplo, descargue el PDF y guárdelo en `rcas/` de su carpeta de trabajo **con el nombre exacto de FUENTES.md** (por ejemplo `rca_021_2016_albemarle_salar_atacama.pdf`): así el manifiesto de ejemplo lo reconoce, con su unidad fiscalizable y sus ID (ALB-001…). Cambiar el nombre no cambia el contenido: la huella SHA-256 sigue siendo la misma.
 
 ---
 
@@ -135,6 +140,8 @@ Con las tres RCAs de ejemplo:
 - **Búsqueda de términos**: se contrastó con la búsqueda del visor de PDF en las tres RCAs, sin omisiones (las diferencias se explican por palabras que contienen el término, como "flora" en "afloramiento", y por plurales de frases).
 
 Esto es una **muestra pequeña**. No permite afirmar un porcentaje de exactitud general del asistente, y no se presenta ninguno.
+
+**Instalación desde GitHub** (24-11-2026, Mac): con el plugin instalado desde la aplicación, el asistente preparó su entorno con autorización, leyó el PDF de Albemarle y ubicó sus secciones con el mismo resultado que en el proyecto original (72 páginas con OCR previo; 17 páginas para la ficha y 22 para obligaciones).
 
 Las pruebas automáticas del código (236) se ejecutan con `pytest`. Las que usan las RCAs de ejemplo se omiten, con un aviso, si los PDF y sus resultados no están en la carpeta.
 
