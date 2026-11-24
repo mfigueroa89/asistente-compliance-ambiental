@@ -1,0 +1,53 @@
+{
+  "archivo": "",
+  "sha256": "",
+  "fecha_elaboracion": "",
+  "elaborado_por": "Claude Code, skill fichar-rca",
+  "aviso": "Herramienta de apoyo. Requiere revisión de un abogado.",
+  "paginas_leidas": [],
+  "campos": {
+    "numero_resolucion": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "fecha_resolucion": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "organo_calificador": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "numero_expediente_o_codigo": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "tipo_instrumento": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "decision": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "reglamento_aplicable": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+
+    "nombre_proyecto": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "titular": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "region": [],
+    "provincia": [],
+    "comuna": [],
+    "tipologia": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "descripcion_breve": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "monto_inversion": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "vida_util": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "fases": [],
+    "superficie_o_dimensiones": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+
+    "componentes_ambientales_relevantes": [],
+    "efectos_articulo_11": [],
+    "participacion_ciudadana": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "pueblos_indigenas": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "permisos_ambientales_sectoriales": [],
+    "areas_protegidas_o_sensibles": [],
+
+    "hay_medidas_mitigacion": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "hay_medidas_reparacion": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "hay_medidas_compensacion": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "hay_plan_seguimiento": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null},
+    "hay_condiciones_exigencias": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null, "rango_localizador": null},
+    "hay_compromisos_voluntarios": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null, "rango_localizador": null},
+    "hay_plan_contingencias": {"valor": "No consta", "pagina_pdf": null, "cita_textual": null, "fuente": null, "rango_localizador": null}
+  },
+  "control": {
+    "paginas_totales": 0,
+    "paginas_escaneadas": [],
+    "paginas_ocr_previo": 0,
+    "paginas_revisadas_en_imagen": [],
+    "paginas_no_leidas": [],
+    "campos_no_consta": [],
+    "observaciones_generales": []
+  }
+}

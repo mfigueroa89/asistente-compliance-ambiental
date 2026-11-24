@@ -1,0 +1,8 @@
+# Lectura de PDFs (texto e imágenes de páginas)
+pymupdf>=1.24
+# Creación del Excel
+openpyxl>=3.1
+# Lectura de config/temas.yaml
+pyyaml>=6.0
+# Pruebas automáticas
+pytest>=8.0

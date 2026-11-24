@@ -1,0 +1,52 @@
+# Tablas fijas de equivalencias entre las letras del artículo 11 de la Ley N° 19.300
+# y los artículos del Reglamento del SEIA que las desarrollan, UNA TABLA POR REGLAMENTO,
+# porque la numeración cambia entre reglamentos.
+#
+# Uso: la ficha registra en "reglamento_aplicable" el reglamento que cita la RCA
+# (con página y cita) y agrega a cada efecto del artículo 11 un campo "letra_equivalente"
+# tomado de la tabla de ESE reglamento, con fuente "equivalencia_legal" y sin página ni cita.
+# Es conocimiento jurídico agregado, NO algo que diga la RCA.
+#
+# Regla: cada número de artículo se verificó contra el texto oficial publicado por la
+# Biblioteca del Congreso Nacional (enlace y fecha en cada tabla). Si un reglamento no
+# se pudo verificar, su lista "equivalencias" queda vacía ([]) y el validador solo advierte.
+#
+# "nombre" es el texto exacto que debe ir en reglamento_aplicable.valor.
+
+reglamentos:
+  - nombre: "D.S. N° 40/2012, Ministerio del Medio Ambiente"
+    descripcion: "Reglamento del Sistema de Evaluación de Impacto Ambiental (vigente)"
+    fuente_oficial: "https://www.bcn.cl/leychile/navegar?idNorma=1053563"
+    verificado: "2026-11-21, contra la versión BCN del 21-ENE-2026 (títulos de los artículos 5 a 10)"
+    equivalencias:
+      - letra: "a"   # Artículo 5.- Riesgo para la salud de la población.
+        articulo_reglamento: 5
+      - letra: "b"   # Artículo 6.- Efecto adverso significativo sobre recursos naturales renovables.
+        articulo_reglamento: 6
+      - letra: "c"   # Artículo 7.- Reasentamiento de comunidades humanas, o alteración significativa de los sistemas de vida...
+        articulo_reglamento: 7
+      - letra: "d"   # Artículo 8.- Localización y valor ambiental del territorio.
+        articulo_reglamento: 8
+      - letra: "e"   # Artículo 9.- Valor paisajístico o turístico.
+        articulo_reglamento: 9
+      - letra: "f"   # Artículo 10.- Alteración del patrimonio cultural.
+        articulo_reglamento: 10
+
+  - nombre: "D.S. N° 95/2001, Ministerio Secretaría General de la Presidencia"
+    descripcion: "Texto refundido del Reglamento del SEIA contenido en su artículo 2 (derogado el 24-12-2013; rige RCAs evaluadas bajo él)"
+    fuente_oficial: "https://www.bcn.cl/leychile/navegar?idNorma=205385"
+    verificado: "2026-11-21, contra el texto BCN del artículo 2 (doble articulado), artículos 5 a 11"
+    equivalencias:
+      - letra: "a"   # Artículo 5.- ... riesgo para la salud de la población ...
+        articulo_reglamento: 5
+      - letra: "b"   # Artículo 6.- ... efectos adversos significativos sobre ... recursos naturales renovables ...
+        articulo_reglamento: 6
+      # Ojo: el artículo 7 de este reglamento trata las normas de referencia, no una letra.
+      - letra: "c"   # Artículo 8.- ... reasentamiento de comunidades humanas o alteración significativa de los sistemas de vida ...
+        articulo_reglamento: 8
+      - letra: "d"   # Artículo 9.- ... se localiza próximo a población, recursos y áreas protegidas ...
+        articulo_reglamento: 9
+      - letra: "e"   # Artículo 10.- ... valor paisajístico o turístico de una zona.
+        articulo_reglamento: 10
+      - letra: "f"   # Artículo 11.- ... alteración de monumentos, sitios con valor antropológico, arqueológico, histórico ...
+        articulo_reglamento: 11

@@ -1,0 +1,13 @@
+{
+  "name": "compliance-ambiental-local",
+  "owner": {
+    "name": "Ignacio Figueroa Moya"
+  },
+  "plugins": [
+    {
+      "name": "asistente-compliance-ambiental",
+      "source": "./",
+      "description": "Asistente de Compliance Ambiental para RCAs chilenas (fichas, obligaciones, consultas y Excel)."
+    }
+  ]
+}

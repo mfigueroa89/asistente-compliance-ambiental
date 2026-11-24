@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/respaldar_salida.py\" --hook || python \"$CLAUDE_PROJECT_DIR/scripts/respaldar_salida.py\" --hook",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  }
+}

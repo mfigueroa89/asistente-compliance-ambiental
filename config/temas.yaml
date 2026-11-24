@@ -1,0 +1,55 @@
+# Temas para consultar las obligaciones (ESPECIFICACION.md §3.3).
+#
+# Cada tema es una lista de términos y sinónimos. La búsqueda (scripts/buscar_palabras.py)
+# no distingue mayúsculas ni tildes, acepta el plural simple (humedal/humedales, vega/vegas)
+# y solo encuentra palabras completas ("vega" no coincide dentro de "vegetación").
+#
+# Se puede editar a mano: agregar o quitar términos o temas. Reglas de formato:
+# - el nombre del tema va sin tildes ni espacios (use guion bajo), seguido de dos puntos;
+# - cada término va en su propia línea, con dos espacios, un guion y un espacio delante.
+#
+# Ojo: un término también coincide con nombres de lugares ("Vegas de San Andrés").
+# Cada resultado muestra el término encontrado y su contexto para que el abogado lo descarte.
+#
+# Decisión de Ignacio (2026-11-23): "paleontológico" y "paleontológica" se agregan a patrimonio_cultural
+# (dos formas porque la búsqueda acepta el plural simple, no el femenino).
+#
+# Pendiente de decisión de Ignacio (2026-11-23): si "pajonal hídrico" o "sistema vegetacional
+# azonal" se agregan a humedales. Por ahora NO están: esas obligaciones aparecen como
+# relación temática (revisar), no como coincidencia literal.
+
+humedales:
+  - humedal
+  - bofedal
+  - vega
+  - turbera
+  - ecosistema lacustre
+  - sitio Ramsar
+recursos_hidricos:
+  - derechos de agua
+  - caudal ecológico
+  - acuífero
+  - napa
+  - extracción de agua
+pueblos_indigenas:
+  - pueblos indígenas
+  - comunidad indígena
+  - Convenio 169
+patrimonio_cultural:
+  - patrimonio cultural
+  - monumento nacional
+  - hallazgo arqueológico
+  - paleontológico
+  - paleontológica
+flora_y_fauna:
+  - flora
+  - fauna
+  - especie en categoría de conservación
+  - rescate y relocalización
+areas_protegidas:
+  - área protegida
+  - parque nacional
+  - sitio prioritario
+glaciares:
+  - glaciar
+  - criósfera

@@ -1,0 +1,21 @@
+# Carpeta de trabajo con RCAs del usuario (no se sube)
+rcas/
+# Manifiesto real del usuario (puede nombrar unidades de clientes); el de ejemplo está en ejemplos/
+/manifiesto.csv
+# Resultados generados (se pueden borrar y regenerar)
+salida/
+# Entorno virtual de Python
+.venv/
+# Claves y credenciales
+.env
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+.pytest_cache/
+# Archivos del sistema macOS
+.DS_Store
+# Configuración local de Claude Code (tiene rutas de este computador)
+.claude/settings.local.json
+# PDF de las RCAs de ejemplo: no se suben (se descargan del e-SEIA, ver ejemplos/rcas_publicas/FUENTES.md)
+ejemplos/rcas_publicas/*.pdf
+ejemplos/rcas_publicas/*.PDF

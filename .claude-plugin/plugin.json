@@ -1,0 +1,12 @@
+{
+  "name": "asistente-compliance-ambiental",
+  "displayName": "Asistente de Compliance Ambiental",
+  "version": "0.1.0",
+  "description": "Procesa Resoluciones de Calificación Ambiental (RCA) chilenas en PDF: ficha por RCA, obligaciones de compliance con página y cita, consulta por tema o palabra y Excel por unidad fiscalizable. Herramienta de apoyo; requiere revisión de un abogado.",
+  "author": {
+    "name": "Ignacio Figueroa Moya"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/mfigueroa89/asistente-compliance-ambiental",
+  "repository": "https://github.com/mfigueroa89/asistente-compliance-ambiental"
+}
