@@ -7,7 +7,7 @@ Un plugin de Claude Code que procesa Resoluciones de Calificación Ambiental (RC
 3. una consulta de esas obligaciones por tema o palabra clave (humedal, bofedal, etc.), con búsqueda exacta y relación temática marcada como "revisar",
 4. un Excel organizado por unidad fiscalizable (concepto de SNIFA, SMA) y proyecto.
 
-Es una demostración para una postulación laboral (cargo de Analista de IA Legal en un estudio jurídico). Debe verse profesional, funcionar de punta a punta con 2 o 3 RCAs reales y estar publicado en GitHub. No es un producto comercial.
+Es un proyecto personal de demostración. Debe verse profesional, funcionar de punta a punta con 2 o 3 RCAs reales y estar publicado en GitHub. No es un producto comercial.
 
 La especificación completa está en ESPECIFICACION.md. Léela antes de proponer nada.
 

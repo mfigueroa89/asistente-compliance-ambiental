@@ -436,6 +436,8 @@ Regla: no pasar a la etapa siguiente sin mi OK.
 
 ### 12.1 Estado
 
+> Nota: los códigos de commit citados en esta sección (por ejemplo 2314174 o 81aee45) corresponden al repositorio de desarrollo y no existen en el repositorio publicado en GitHub, que se publicó sin ese historial.
+
 - Etapa 0: cerrada.
 - Etapa 1: cerrada.
 - Etapa 2: cerrada el 2026-11-22. Fichas validadas y aprobadas de Queltehue (DIA, D.S. 40/2012), Arqueros 2013 (EIA, D.S. 95/2001) y Albemarle 2016 (EIA, D.S. 95/2001, OCR previo en todas sus páginas); todas sus citas confirmadas por código. Se agregaron reglamento_aplicable, letra_equivalente (tablas por reglamento verificadas contra la BCN), categoria en áreas protegidas o sensibles y los campos hay_condiciones_exigencias, hay_compromisos_voluntarios y hay_plan_contingencias; se quitó representante_legal.

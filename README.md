@@ -10,7 +10,7 @@ Un asistente para abogados y equipos de cumplimiento que revisan **Resoluciones 
 3. **Consulta las obligaciones por tema o palabra** ("¿qué obligaciones hay sobre humedales?"), separando lo que dice literalmente el texto de lo que es una interpretación a revisar.
 4. **Genera un Excel** organizado por unidad fiscalizable (el concepto que usa la SMA en SNIFA) y por proyecto.
 
-Es un proyecto personal de demostración, hecho para una postulación laboral. No es un producto comercial.
+Es un proyecto personal de demostración. No es un producto comercial.
 
 ---
 
@@ -26,7 +26,7 @@ Es un proyecto personal de demostración, hecho para una postulación laboral. N
 
 ## Requisitos
 
-- La aplicación de escritorio de Claude (pestaña **Code**) o Claude Code en la terminal, con una cuenta de Claude. No se necesita ninguna clave de API ni pagos aparte: todo el trabajo lo hace Claude dentro de la sesión.
+- La aplicación de escritorio de Claude (pestaña **Code**) o Claude Code en la terminal, con una cuenta de Claude. No se necesita clave de API, pero sí una suscripción a Claude que incluya Claude Code: todo el trabajo lo hace Claude dentro de la sesión.
 - **Python 3** (versión 3.10 o superior) instalado en el computador. En Mac suele venir instalado; si no, se descarga desde [python.org](https://www.python.org/downloads/). En Windows, al instalarlo, marque "Add Python to PATH".
 - Mac o Windows.
 
